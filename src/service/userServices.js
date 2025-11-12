@@ -53,7 +53,7 @@ async updateUser(email, data, file) {
 
        
         if (file) {
-            updatePayload.profile_pic = `http://localhost:5000/uploads/${file.filename}`;
+            updatePayload.profile_pic = `https://live-backend-production-a906.up.railway.app/${file.filename}`;
         }
         
         const updatedUser = await prisma.user.update({
