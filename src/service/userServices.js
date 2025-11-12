@@ -27,7 +27,7 @@ async createUser(data, file) {
     }
 
     
-    const profile_pic = file ? `http://localhost:5000/uploads/${file.filename}` : null;
+    const profile_pic = file ? `https://live-backend-production-a906.up.railway.app/uploads/${file.filename}` : null;
 
 
     const newUser = await prisma.user.create({
